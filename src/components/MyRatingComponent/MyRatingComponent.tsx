@@ -12,7 +12,7 @@ const MyRatingComponent = ({contentTitle, contentText, labelButton}: RatingProps
   return (
     <div className='rating-card'>
       <div className='icon-star'>
-        <img src="src\assets\images\icon-star.svg" alt="icon-star" />
+        <img src="../../assets/images/icon-star.svg" alt="icon-star" />
       </div>
       <div className='rating-content'>
         <RatingContent contentTitle={contentTitle} contentText={contentText} />
