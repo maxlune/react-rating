@@ -16,3 +16,9 @@
   margin: 5% 5%;
   padding: 5%;
 }
+
+.rating-card svg {
+  background-color: #262E38;
+  border-radius: 50%;
+  padding: 10px;
+}

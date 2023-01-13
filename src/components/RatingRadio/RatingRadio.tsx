@@ -1,19 +1,22 @@
 import React from 'react'
+import RatingButton from '../RatingButton';
 import '../RatingRadio/RatingRadio.css'
 
-const RatingRadio = () => {
+export interface RatingRadioProps {
+  ratingCount: number;
+}
+
+const RatingRadio = ({ ratingCount }: RatingRadioProps) => {
+  const ratingArray = Array.from({length: ratingCount}, (v, k) => k+1)
+
   return (
-    <div>
-      <input type="radio" id="1" name="radio"/>
-      <label htmlFor="1" >1</label>
-      <input type="radio" id="2" name="radio"/>
-      <label htmlFor="2">2</label>
-      <input type="radio" id="3" name="radio"/>
-      <label htmlFor="3">3</label>
-      <input type="radio" id="4" name="radio"/>
-      <label htmlFor="4">4</label>
-      <input type="radio" id="5" name="radio"/>
-      <label htmlFor="5">5</label>
+    <div className='rating-radio'>
+      {ratingArray.map((rating: number) => 
+          (<div className='radio-box' key={rating}>
+            <input type="radio" id={rating.toString()} value={rating} name="radio"/>
+            <label htmlFor={rating.toString()}>{rating.toString()}</label>
+          </div>)
+      )}
     </div>
   )
 }

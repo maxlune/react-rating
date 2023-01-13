@@ -9,6 +9,7 @@ button {
   line-height: 19px;
   letter-spacing: 2px;
   padding: 11px 138px 15px;
+  border: none;
 }
 
 button:hover {
