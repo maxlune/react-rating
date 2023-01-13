@@ -2,8 +2,36 @@
   display: flex;
   justify-content: center;
   flex-direction: column;  
-  text-align: center;
   border-radius: 30px;
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
   color: white;
+}
+
+.icon-star img {
+  border-radius: 50%;
+  background: #262E38;
+}
+
+.rating-button button {
+  background: #FC7614;
+  border-radius: 22.5px;
+  color: white;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  padding: 11px 138px 15px;
+}
+
+.rating-button button:hover {
+  background-color: #fff;
+  color: #FC7614;
+  cursor: pointer;
+}
+
+.rating-card {
+  margin: 5% 5%;
+  padding: 5%;
 }
