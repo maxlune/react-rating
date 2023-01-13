@@ -7,10 +7,10 @@ export interface RatingContentProps {
 
 const RatingContent = ({contentTitle, contentText}: RatingContentProps) => {
   return (
-    <div>
+    <>
       <h1>{contentTitle}</h1>
       <p>{contentText}</p>
-    </div>
+    </>
   )
 }
 
