@@ -1,11 +1,14 @@
 {
-  "name": "react-rating",
-  "version": "0.0.1",
+  "name": "@maxlune/react-rating",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/maxlune"
+  },
+  "version": "0.0.6",
   "description": "A simple custom rating React component library",
   "scripts": {
     "rollup": "rollup -c"
   },
-  "author": "Alex Eagleson",
+  "author": "Max",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.0",
@@ -15,6 +18,7 @@
     "react": "^18.2.0",
     "rollup": "^3.10.0",
     "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^4.9.4"
   },
   "main": "dist/cjs/index.js",
